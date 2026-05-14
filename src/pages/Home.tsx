@@ -22,13 +22,25 @@ const Home = () => {
           style={{ y: yBg }}
           className="absolute inset-0 z-0"
         >
+          {/* Mobile Video */}
           <video 
             autoPlay 
             loop 
             muted 
             playsInline
             poster="/p001.png"
-            className="w-full h-full object-cover scale-110"
+            className="w-full h-full object-cover scale-110 block md:hidden"
+          >
+            <source src="/p003.mp4" type="video/mp4" />
+          </video>
+          {/* Desktop Video */}
+          <video 
+            autoPlay 
+            loop 
+            muted 
+            playsInline
+            poster="/p001.png"
+            className="w-full h-full object-cover scale-110 hidden md:block"
           >
             <source src="/0001.mp4" type="video/mp4" />
           </video>
