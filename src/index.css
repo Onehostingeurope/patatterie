@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+  }
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-primary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-secondary text-accent px-8 py-3 font-semibold transition-all hover:bg-yellow-500 hover:shadow-warm;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full bg-primary text-white px-8 py-3 font-semibold transition-all hover:bg-red-900 hover:shadow-warm;
+  }
+  
+  .btn-outline {
+    @apply inline-flex items-center justify-center rounded-full border-2 border-primary text-primary px-8 py-3 font-semibold transition-all hover:bg-primary hover:text-white;
+  }
+
+  .card-warm {
+    @apply bg-cream rounded-[1.5rem] p-6 shadow-warm transition-transform hover:-translate-y-1 hover:shadow-warm-lg border border-[#E8D1A7];
+  }
+}
