@@ -88,12 +88,12 @@ const Home = () => {
             </Link>
             
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
-              <span className="text-xs font-bold tracking-widest uppercase text-cream [text-shadow:0_2px_4px_rgba(0,0,0,0.9)]">Ou en livraison :</span>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 border border-cream/30 rounded-full hover:bg-cream/10 transition-colors flex items-center gap-2 text-sm font-bold backdrop-blur-sm">
+              <span className="text-xs font-bold tracking-widest uppercase text-cream [text-shadow:0_2px_4px_rgba(0,0,0,0.9)] text-center">Ou en livraison :</span>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer" className="w-48 sm:w-auto px-6 py-2.5 border border-cream/30 rounded-full hover:bg-cream/10 transition-colors flex items-center justify-center gap-2 text-sm font-bold backdrop-blur-sm">
                   <span className="text-[#06C167]">Uber</span> Eats
                 </a>
-                <a href="https://deliveroo.fr" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 border border-cream/30 rounded-full hover:bg-cream/10 transition-colors flex items-center gap-2 text-sm font-bold backdrop-blur-sm">
+                <a href="https://deliveroo.fr" target="_blank" rel="noopener noreferrer" className="w-48 sm:w-auto px-6 py-2.5 border border-cream/30 rounded-full hover:bg-cream/10 transition-colors flex items-center justify-center gap-2 text-sm font-bold backdrop-blur-sm">
                   <span className="text-[#00CCBC]">Deliveroo</span>
                 </a>
               </div>
