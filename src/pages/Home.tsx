@@ -51,7 +51,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-            className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold mb-6 leading-[0.9] [text-shadow:0_4px_20px_rgba(0,0,0,0.9)]"
+            className="font-serif text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-bold mb-6 leading-[0.9] [text-shadow:0_4px_20px_rgba(0,0,0,0.9)]"
           >
             Sublimer <br/> <span className="text-secondary italic font-light">l'essentiel.</span>
           </motion.h1>
@@ -77,7 +77,7 @@ const Home = () => {
             
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-2">
               <span className="text-xs font-bold tracking-widest uppercase text-cream [text-shadow:0_2px_4px_rgba(0,0,0,0.9)]">Ou en livraison :</span>
-              <div className="flex gap-3">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer" className="px-6 py-2.5 border border-cream/30 rounded-full hover:bg-cream/10 transition-colors flex items-center gap-2 text-sm font-bold backdrop-blur-sm">
                   <span className="text-[#06C167]">Uber</span> Eats
                 </a>
@@ -231,7 +231,7 @@ const Home = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="bg-white p-12 md:p-20 rounded-[3rem] shadow-warm-lg border border-secondary/20 relative overflow-hidden"
+            className="bg-white p-8 md:p-20 rounded-[2rem] md:rounded-[3rem] shadow-warm-lg border border-secondary/20 relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-secondary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
             
@@ -244,12 +244,12 @@ const Home = () => {
             </Link>
 
             <div className="pt-8 border-t border-primary/10 flex flex-col items-center">
-              <span className="text-xs font-bold uppercase tracking-widest text-primary/50 block mb-4">Ou savourez nos créations chez vous</span>
-              <div className="flex flex-wrap justify-center gap-4">
-                <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer" className="px-6 py-2 border border-[#06C167]/30 text-[#06C167] rounded-full hover:bg-[#06C167]/10 transition-colors text-sm font-bold">
+              <span className="text-xs font-bold uppercase tracking-widest text-primary/50 block mb-4 text-center">Ou savourez nos créations chez vous</span>
+              <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
+                <a href="https://ubereats.com" target="_blank" rel="noopener noreferrer" className="px-6 py-3 md:py-2 border border-[#06C167]/30 text-[#06C167] rounded-full hover:bg-[#06C167]/10 transition-colors text-sm font-bold flex-1 text-center">
                   Commander sur Uber Eats
                 </a>
-                <a href="https://deliveroo.fr" target="_blank" rel="noopener noreferrer" className="px-6 py-2 border border-[#00CCBC]/30 text-[#00CCBC] rounded-full hover:bg-[#00CCBC]/10 transition-colors text-sm font-bold">
+                <a href="https://deliveroo.fr" target="_blank" rel="noopener noreferrer" className="px-6 py-3 md:py-2 border border-[#00CCBC]/30 text-[#00CCBC] rounded-full hover:bg-[#00CCBC]/10 transition-colors text-sm font-bold flex-1 text-center">
                   Commander sur Deliveroo
                 </a>
               </div>
