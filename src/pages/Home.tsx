@@ -48,7 +48,7 @@ const Home = () => {
 
         <motion.div 
           style={{ opacity: opacityText, scale: scaleText }}
-          className="relative z-10 container mx-auto px-4 text-center text-cream flex flex-col items-center"
+          className="relative z-10 container mx-auto px-4 text-center text-cream flex flex-col items-center pb-32 md:pb-0"
         >
           <motion.div
             initial={{ opacity: 0, y: 30 }}
